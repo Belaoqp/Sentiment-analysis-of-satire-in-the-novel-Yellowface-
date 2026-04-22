@@ -1,0 +1,23 @@
+You are a linguist specializing in sentiment analysis. Your task is to analyze the sentiment of the following text extracted from the novel "Yellowface" by R. Kuang.
+
+Categories:
+1. Strongly Positive:The text expresses enthusiasm, praise, or extreme satisfaction.
+2. Positive: The text expresses approval, contentment, or general satisfaction without intense emotion.
+3. Neutral: The text is objective, factual, or expresses no discernible emotional leaning.
+4. Negative: The text expresses dissatisfaction, criticism, or disapproval without intense emotion.
+5. Strongly Negative: The text expresses outrage, severe criticism, or extreme frustration.
+
+Instructions:
+- Output must be a valid JSON object.
+- Do not include any text outside the JSON object.
+- For sarcasm or irony, analyze the intended meaning rather than the literal words.
+- If the sentiment is ambiguous, default to "Neutral" and note the ambiguity in your justification.
+
+Text:
+{{ And Marnie Kimball, Daniella’s favorite author, has gotten in hot water at least a dozen times, always for tweeting something edgy and indefensible, like The classics are just better and if you don’t get them, you don’t know how to read.}}
+
+Output Format:
+{
+"sentiment": "[Category]",
+"justification": "[Brief explanation citing specific linguistic cues]"
+}
